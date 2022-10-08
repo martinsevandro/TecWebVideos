@@ -12,7 +12,7 @@ p{
 
 .divblock {
     /* width: 100vw; */
-    height: 50vh;
+    /* height: 50vh; */
 }
  
 .one {    
@@ -42,6 +42,7 @@ p{
     padding: 10px 50px;
     grid-row-start: 1;
     grid-row-end: 2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .CarregarButton{
     display: grid;
@@ -64,50 +65,28 @@ p{
     padding: 10px 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 70% 30%;
     column-gap: 80px;
 }
-.bannerVideo1{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-.infoCard1{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-.bannerVideo2{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-.infoCard2{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-.bannerVideo3{
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-.infoCard3{
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-
-.infos{
+.post{
     display: grid;
-    grid-template-columns: 1fr 0.6fr;
-    grid-template-rows: 1fr 0.5fr 0.5fr;
+    grid-template-rows: 70% 1fr;
+    height: 100%;
+}
+.videoPost{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 100%;
+}
+.textoPost{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: grid;
+    grid-template-columns: 80% 1fr;
+    grid-template-rows: 50% 1fr 1fr;
+    /* width: 100%; */
+    margin-top: 10px;
+    justify-items: auto;
+    align-items: center;
     
 }
 #estreia, #roteiro, #diretor, #filme{
@@ -121,6 +100,8 @@ h7{
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
+    
+    
 }
 #diretor{
     grid-column-start: 1;
@@ -133,7 +114,6 @@ h7{
     grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 4;
-    
 }
 #estreia{
     grid-column-start: 2;
@@ -143,12 +123,6 @@ h7{
     
 }
 
-    /* .CarregarButton{
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 3;
-        grid-row-end: 4;
-    } */
 
 /* Evandro - fim */
 
@@ -306,4 +280,19 @@ color: white;
 
 .eleven {
     
+}
+
+@media (max-width: 389px){
+    body{
+        display: none;
+    }
+}
+@media (min-width: 390px) and (max-width: 799px){
+    .four{
+        row-gap: 35px;
+    }
+    .posters{
+        grid-template-columns: 1fr;
+        row-gap: 80px;
+    }
 }
