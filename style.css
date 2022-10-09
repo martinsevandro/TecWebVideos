@@ -150,10 +150,44 @@ h7{
     margin: 40px 0px;
 }
 .LivreFav{
-    /* background-color: red; */
     padding: 40px;
-    border: solid 10px black    ;
+    border: solid 5px black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 90% 1fr;
 }
+.MangaFav{
+    border: solid 1px black;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.MangaFav>img{
+    width: 100%;
+    height: 100%;
+}
+.mangaFav1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.mangaFav2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.LegendFav{
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.legFav1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.legFav2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+
 .Sobre{
     /* background-color: blue; */
     padding: 0px 40px 10px ;
@@ -168,6 +202,7 @@ h2{
 .Sobretext{
     width: 30vw;
     margin-bottom: 30px;
+    
 }
 .Edittext{
     width: 30vw;
@@ -198,94 +233,95 @@ color: white;
     background: #d85af8;
     color: white;
 }
+.fa-instagram-user:after { color:red; }
 
 /* Final: div sobre Favoritos */
 
 /* Inicio: div sobre Propaganda */
 
 
-    .eight {
-        display: grid;
-        margin: 40px 10px;
-        grid-template-columns: 60vw 1fr;
-    }
-    .Novidades{
-        padding: 10px;
-        display: grid;
-        /* grid-template-columns:  20vw 1fr; */
-        grid-template-rows: 5vh 1fr;
-        column-gap: 20px;
-        row-gap: 20px;
-        align-content: center;
-    }
-    .Novidtitulo{
-        font-weight: bold;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        padding: 0 10px;
-    }
-    .Materia{
-        grid-row-start: 2;
-        grid-row-end: 3;
-        display: grid;
-        grid-template-columns: 40% 1fr;
-        grid-template-rows: repeat(3, 1fr);
-        column-gap: 20px;
-    }
-    .ImgMat{
-        display: flex;
-        height: 15vh;
-        padding: 0 10px;
-    
-        grid-column-start: 1;
-        grid-column-end: 2;
-    }
-    .ImgMat>img{
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-    }
-    .TextoMat{
-        text-align: justify ;
-    
-        grid-column-start: 2;
-        grid-column-end: 3;
-    }
-    .imgMat1{    
-        grid-row-start: 1;
-        grid-row-end: 2;
-    }
-    .textMat1{
-        grid-row-start: 1;
-        grid-row-end: 2;
-    }
-    .imgMat2{
-        grid-row-start: 2;
-        grid-row-end: 3;
-    }
-    .textMat2{
-        grid-row-start: 2;
-        grid-row-end: 3;
-    }
-    .imgMat3{
-        grid-row-start: 3;
-        grid-row-end: 4;
-    }
-    .textMat3{
-        grid-row-start: 3;
-        grid-row-end: 4;
-    }
-    
-    
-    .LivrePropaganda{
-        /* border: #3B5998 1px solid; */
-        padding: 10px;    
-        display: flex;
-        justify-content: center;
-    }
-    
-    /* Final: div sobre Propaganda */
-    /* Final: Evandro */
+.eight {
+    display: grid;
+    margin: 40px 10px;
+    grid-template-columns: 60vw 1fr;
+}
+.Novidades{
+    padding: 10px;
+    display: grid;
+    /* grid-template-columns:  20vw 1fr; */
+    grid-template-rows: 5vh 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+    align-content: center;
+}
+.Novidtitulo{
+    font-weight: bold;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding: 0 10px;
+}
+.Materia{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 20px;
+}
+.ImgMat{
+    display: flex;
+    height: 15vh;
+    padding: 0 10px;
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.ImgMat>img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.TextoMat{
+    text-align: justify ;
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.imgMat1{    
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.textMat1{
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.imgMat2{
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.textMat2{
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.imgMat3{
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.textMat3{
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+
+.LivrePropaganda{
+    /* border: #3B5998 1px solid; */
+    padding: 10px;    
+    display: flex;
+    justify-content: center;
+}
+
+/* Final: div sobre Propaganda */
+/* Final: Evandro */
 
 
 
@@ -320,6 +356,40 @@ color: white;
         grid-template-columns: 1fr;
         row-gap: 80px;
     }
+
+    .seven{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .LivreFav{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        flex-wrap: wrap;            
+        width: 100%; 
+    }
+    .Sobre{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 40% repeat(2, 1fr);
+    }
+    .Sobretext{
+        width: 100%;
+        /* height: 100%; */
+    }
+    .Edittext{
+        width: 100%;
+        /* height: 100%; */
+    }
+    .Social{
+        width: 100%;
+        /* height: 100%; */
+    }
+
     .eight{
         display: flex;
         justify-content: center;
