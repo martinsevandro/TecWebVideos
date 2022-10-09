@@ -5,6 +5,9 @@
 body{
   
 }
+a{
+    text-decoration: none;  
+}
 p{
     margin: 0;
     padding: 0;
@@ -29,6 +32,7 @@ p{
 
 
 /* Evandro - inicio */
+    /* div sobre Entrevista e Making Off */
 .four {
     background-color: rgb(175, 175, 175);
     padding: 10px 50px; 
@@ -123,6 +127,8 @@ h7{
     
 }
 
+    /* div sobre Entrevista e Making Off */
+
 
 /* Evandro - fim */
 
@@ -137,6 +143,7 @@ h7{
 }
 
 /* Evandro - inicio */
+    /* Inicio: div sobre Favoritos */
 .seven {
     display: grid;
     grid-template-columns: 60vw 1fr;
@@ -155,6 +162,8 @@ h7{
 }
 h2{
     margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
 }
 .Sobretext{
     width: 30vw;
@@ -174,101 +183,112 @@ h2{
     text-align: center;
     text-decoration: none;
 }
-
-/* Add a hover effect if you want */
 .fa:hover {
 opacity: 0.7;
 }
-
-/* Set a specific color for each brand */
-
-/* Facebook */
 .fa-facebook {
 background: #3B5998;
 color: white;
 }
-
-/* Twitter */
 .fa-twitter {
 background: #55ACEE;
 color: white;
 }
-
-/* Instagram */
 .fa-instagram{
     background: #d85af8;
     color: white;
 }
 
-.eight {
-    display: grid;
-    margin: 40px 0px;
-    grid-template-columns: 60vw 1fr;
+/* Final: div sobre Favoritos */
+
+/* Inicio: div sobre Propaganda */
+
+
+    .eight {
+        display: grid;
+        margin: 40px 10px;
+        grid-template-columns: 60vw 1fr;
+    }
+    .Novidades{
+        padding: 10px;
+        display: grid;
+        /* grid-template-columns:  20vw 1fr; */
+        grid-template-rows: 5vh 1fr;
+        column-gap: 20px;
+        row-gap: 20px;
+        align-content: center;
+    }
+    .Novidtitulo{
+        font-weight: bold;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        padding: 0 10px;
+    }
+    .Materia{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        display: grid;
+        grid-template-columns: 40% 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        column-gap: 20px;
+    }
+    .ImgMat{
+        display: flex;
+        height: 15vh;
+        padding: 0 10px;
     
-}
-.Novidades{
-    /* background-color: green; */
-    padding: 10px;
-    display: grid;
-    grid-template-rows: 5vh repeat(3, 10vh);
-    grid-template-columns:  20vw 1fr;
-    row-gap: 10px;
-}
-.Novivtitulo{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-.capaMat1{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-.textoMat1{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-.capaMat2{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .ImgMat>img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .TextoMat{
+        text-align: justify ;
     
-}
-.textoMat2{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4;
-}
-.capaMat3{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 4;
-    grid-row-end: 5;
-}
-.textoMat3{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 4;
-    grid-row-end: 5;
-}
-.LivrePropaganda{
-    /* background-color: orange; */
-    padding: 10px;
-}
-.imgMat{
-    width: 100%;
-    height: 100%;
-}
-.Mat{
-    margin: 10px 0;
-}
-/* Evandro - fim */
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    .imgMat1{    
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .textMat1{
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .imgMat2{
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .textMat2{
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .imgMat3{
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .textMat3{
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    
+    
+    .LivrePropaganda{
+        /* border: #3B5998 1px solid; */
+        padding: 10px;    
+        display: flex;
+        justify-content: center;
+    }
+    
+    /* Final: div sobre Propaganda */
+    /* Final: Evandro */
+
+
+
 
 .nine {
 
@@ -282,12 +302,17 @@ color: white;
     
 }
 
+
+
+/* Medias */
+
 @media (max-width: 389px){
     body{
         display: none;
     }
 }
 @media (min-width: 390px) and (max-width: 799px){
+    /* Evandro */
     .four{
         row-gap: 35px;
     }
@@ -295,4 +320,40 @@ color: white;
         grid-template-columns: 1fr;
         row-gap: 80px;
     }
+    .eight{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .Novidades{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        /* width: 100%; */
+    }
+    .Materia{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;        
+    }
+    .ImgMat{        
+        width: 100%;
+        height: 15vh;    
+        margin-top: 40px;
+        padding: 0;
+    }
+    .TextoMat{
+        text-align: justify;            
+    }
+
+    .LivrePropaganda>a>img{
+        width: 90vw;
+    }
+   
+
+    /* Evandro */
 }
