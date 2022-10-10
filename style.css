@@ -9,8 +9,7 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-}
+body {}
 
 a {
   text-decoration: none;
@@ -25,6 +24,7 @@ p {
   /* width: 100vw; */
   /* height: 50vh; */
 }
+
 /*IGOR MACIEL CSS MENU*/
 
 .menu {
@@ -67,6 +67,7 @@ p {
   flex-direction: row;
   position: relative;
 }
+
 .search img {
   position: absolute;
   right: 5px;
@@ -90,6 +91,7 @@ p {
   overflow: hidden;
   margin-bottom: 30px;
 }
+
 .titulo1 {
   display: flex;
   flex-direction: row;
@@ -111,6 +113,7 @@ p {
   transition: 0.6s;
   width: 25%;
 }
+
 .info {
   display: flex;
   flex-direction: column;
@@ -154,13 +157,16 @@ p {
 #slide1:checked .s1 {
   margin-left: 0;
 }
-#slide2:checked ~ .s1 {
+
+#slide2:checked~.s1 {
   margin-left: -25%;
 }
-#slide3:checked ~ .s1 {
+
+#slide3:checked~.s1 {
   margin-left: -50%;
 }
-#slide4:checked ~ .s1 {
+
+#slide4:checked~.s1 {
   margin-left: -75%;
 }
 
@@ -196,6 +202,7 @@ p {
   padding-bottom: 45px;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .form_header h1::after {
   content: "";
   display: block;
@@ -214,6 +221,7 @@ p {
   justify-content: center;
   align-items: center;
 }
+
 .campos {
   display: flex;
   flex-direction: column;
@@ -402,7 +410,7 @@ p {
   .principalst {
     grid-template-columns: 100%;
     grid-template-rows: 80px 830px 80px 790px;
-    grid-template-areas: "cabecalho1" "secao" "cabecalho2 " "rodape";
+    grid-template-areas: "cabecalho1""secao""cabecalho2 ""rodape";
   }
 
   .videos {
@@ -453,7 +461,7 @@ p {
   .principalst {
     grid-template-columns: 100%;
     grid-template-rows: 80px 1630px 80px 1070px;
-    grid-template-areas: "cabecalho1" "secao" "cabecalho2 " "rodape";
+    grid-template-areas: "cabecalho1""secao""cabecalho2 ""rodape";
   }
 
   .videos {
@@ -637,12 +645,283 @@ h7 {
 /* div sobre Entrevista e Making Off */
 
 /* Evandro - fim */
-
+/* INÍCIO STUDART five */
 .five {
+
+  background-color: azure;
+
 }
 
-.six {
+.paragrafost2 {
+  padding: 0;
+  margin: 0;
+  font-size: 3rem;
+  /* tamanho da fonte */
+  font-style: italic;
+  /* estilo */
+  color: rgb(80, 78, 78);
+
 }
+
+.principalst2 {
+  border: solid 3px;
+  width: 100%;
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 80px 450px;
+  grid-template-areas: "cabecalho1 "
+    "secao ";
+}
+
+.headerst2 {
+
+  grid-area: cabecalho1;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 100%;
+
+}
+
+
+.videos2 {
+  grid-area: secao;
+  width: 100%;
+
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 400px;
+
+}
+
+#v012,
+#v022,
+#v032,
+#v042 {
+  margin-left: 5%;
+  width: 95%;
+  height: 100%;
+}
+
+#v052 {
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
+  height: 100%;
+
+
+}
+
+.video12,
+.video22,
+.video32,
+.video42,
+.video52 {
+  align-items: center;
+  text-align: center;
+
+}
+
+#top1,
+#top2,
+#top3,
+#top4,
+#top5 {
+
+  font-size: 1.5rem;
+  /* tamanho da fonte */
+  font-style: italic;
+  /* estilo */
+  color: rgb(80, 78, 78);
+  margin-top: -3px;
+}
+
+
+
+
+
+
+
+
+
+@media(max-width: 992px) {
+  .principalst2 {
+    grid-template-columns: 100%;
+    grid-template-rows: 80px 1400px;
+    grid-template-areas: "cabecalho1""secao";
+  }
+
+
+
+  .videos2 {
+    grid-area: secao;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 400px;
+
+
+    width: 100%;
+
+
+
+
+  }
+
+  .video12 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-left: -2.5%;
+    margin-right: 2.5%;
+
+  }
+
+  .video22,
+  .video32 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    height: 400px;
+    margin-top: 50px;
+    margin-right: 5%;
+  }
+
+  .video42,
+  .video52 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    height: 400px;
+  }
+}
+
+@media(max-width: 768px) {
+
+  .principalst2 {
+    grid-template-columns: 100%;
+    grid-template-rows: 80px 2300px;
+    grid-template-areas: "cabecalho1""secao";
+  }
+
+
+
+  .videos2 {
+    grid-area: secao;
+    grid-template-columns: 100%;
+    grid-template-rows: 400px;
+
+
+    width: 100%;
+
+  }
+
+  .video12 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin: 0;
+    margin-right: 5%;
+    margin-left: 0.5%;
+  }
+
+
+
+  .video22 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin-right: 5%;
+
+
+
+  }
+
+
+  .video32 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin-right: 5%;
+    margin-top: -20px;
+  }
+
+
+
+
+  .video42 {
+    grid-row-start: 4;
+    grid-row-end: 5;
+
+    margin-right: 5%;
+  }
+
+  .video52 {
+    grid-row-start: 5;
+    grid-row-end: 6;
+
+    width: 100%;
+  }
+
+
+}
+
+
+
+
+
+
+/* FIM STUDART five */
+
+
+/* INÍCIO STUDART six */
+
+.principalst3 {
+  border: solid 3px;
+
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 600px;
+  grid-template-areas: "secao ";
+}
+
+
+
+
+.videos3 {
+  grid-area: secao;
+  width: 100%;
+
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 200px;
+
+}
+
+#k,
+#kn {
+  width: 100%;
+  height: 100%;
+}
+
+#k {
+  border-radius: 25rem;
+}
+
+.video13 {
+  height: 600px;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 4;
+
+}
+
+.video23 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+
+}
+
+
+
+/* FIM STUDART six */
 
 /* Evandro - inicio */
 /* Inicio: div sobre Favoritos */
@@ -666,7 +945,7 @@ h7 {
   grid-row-end: 2;
 }
 
-.MangaFav > img {
+.MangaFav>img {
   width: 100%;
   height: 100%;
 }
@@ -719,8 +998,7 @@ h2 {
   margin-bottom: 30px;
 }
 
-.Social {
-}
+.Social {}
 
 .fa {
   padding: 20px;
@@ -798,7 +1076,7 @@ h2 {
   grid-column-end: 2;
 }
 
-.ImgMat > img {
+.ImgMat>img {
   object-fit: cover;
   width: 100%;
   height: 100%;
@@ -851,14 +1129,11 @@ h2 {
 /* Final: div sobre Propaganda */
 /* Final: Evandro */
 
-.nine {
-}
+.nine {}
 
-.ten {
-}
+.ten {}
 
-.eleven {
-}
+.eleven {}
 
 /* Medias */
 
@@ -869,6 +1144,7 @@ h2 {
 }
 
 @media (min-width: 390px) and (max-width: 799px) {
+
   /* Evandro */
   .four {
     row-gap: 35px;
@@ -951,7 +1227,7 @@ h2 {
     text-align: justify;
   }
 
-  .LivrePropaganda > a > img {
+  .LivrePropaganda>a>img {
     width: 90vw;
   }
 
