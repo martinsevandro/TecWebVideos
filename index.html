@@ -1,420 +1,681 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Vídeos de Animes</title>
+  </head>
 
-<head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet"
-                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <title>Vídeos de Animes</title>
-</head>
+  <body>
+    <main>
+      <section class="menu">
+        <img class="logo" src="" alt="logo" />
 
-<body>
-        <main>
+        <ul class="paginas">
+          <li><a href="#lançamentos">lançamentos |</a></li>
+          <li><a href="#paragrafost"> em destaque | </a></li>
+          <li><a href="#header"> avaliações | </a></li>
+          <li><a href="#subtitle"> entrevistas & makingof | </a></li>
+          <li><a href="#Novidades"> novidades |</a></li>
+        </ul>
 
-                <div class="one">
-                        <!-- Igor -->
-                        <p>Igor</p>
-                </div>
+        <div class="search">
+          <input type="text" class="pesquisa" placeholder="Pesquisar filme" />
+          <a href="#"
+            ><img src="/assets/icone-cancelar.svg" alt="cancelar"
+          /></a>
+        </div>
+      </section>
 
-                <div class="two">
-                        <!-- Studart -->
-                        <div class="principalst">
-                                <header class="headerst">
-                                        <p class="paragrafost">Em destaque</p>
-                                        <select class="especialidadest">
-                                                <option value="Naruto">Naruto</option>
-                                                <option value="DBZ">DBZ</option>
-                                                <option value="Luta">Luta</option>
-                                                <option value="Guerra">Guerra</option>
-                                        </select>
-                                </header>
-                                <section class="videos">
-                                        <div class="video1">
-                                                <iframe id="v01" width="100%" height="100%"
-                                                        src="https://www.youtube.com/embed/97dkzVU4p-M"
-                                                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+      <section id="lançamentos">
+        <h1 class="titulo1">Lançamentos</h1>
+
+        <div class="slides">
+          <input type="radio" name="slide" id="slide1" checked />
+          <input type="radio" name="slide" id="slide2" />
+          <input type="radio" name="slide" id="slide3" />
+          <input type="radio" name="slide" id="slide4" />
+          <div class="slide s1">
+            <div class="video1">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/NGucBaennao"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="info">
+              <h2 class="nome_do_filme">Captain Tsubasa: Europe Daikessen</h2>
+              <p>
+                Este filme foi realizado em 13 de julho de 1985, e é o primeiro
+                filme de Captain Tsubasa. Dura aproximadamente 41 minutos. Neste
+                filme o Japão enfrenta uma equipe combinado europeu com
+                jogadores como Pierre, Karl-Heinz Schneider e cia, e vence os
+                europeus por 3 a 2.
+              </p>
+
+              <p>Diretor:Isamu Imakake</p>
+              <p>Roteiro:Yōichi Takahashi</p>
+              <p>Estreia:13 de julho de 1985</p>
+              <p>
+                Elenco:Akari Hibino Seiyū, Akiko Inose, Koichi Hashimoto, Ken'yū
+                Horiuchi, Nobuo Tobita e Hirotaka Suzuoki
+              </p>
+              <p>Avaliações : 6.9</p>
+              <img class="avalia" src="assets/download.jpg" alt="nota" />
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="video2">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/QmLlsWcTQdI"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="info">
+              <h2 class="nome_do_filme">
+                Captain Tsubasa: Ayaushi, Zen Nippon Jr.
+              </h2>
+              <p>
+                Este filme também é do ano de 1985, tem duração de 60 minutos. É
+                basicamente a desforra dos jogadores europeus diante da
+                humilhação sofrida anteriormente, porém o Japão vence por 4 a 3.
+              </p>
+
+              <p>Diretor:Isamu Imakake</p>
+              <p>Roteiro:Yōichi Takahashi</p>
+              <p>Estreia:21 de dezembro de 1985</p>
+              <p>
+                Elenco:Akari Hibino Seiyū, Akiko Inose, Koichi Hashimoto, Ken'yū
+                Horiuchi, Nobuo Tobita e Hirotaka Suzuoki
+              </p>
+              <p>Avaliações : 7.0</p>
+              <img class="avalia" src="assets/download.jpg" alt="nota" />
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="video3">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/KwuSaswpVhY"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe
+              >>
+            </div>
+            <div class="info">
+              <h2 class="nome_do_filme">
+                Captain Tsubasa: Asu ni Mukatte Hashire
+              </h2>
+              <p>
+                Este filme é de 1986 e tem duração de 40 minutos. Mostra um jogo
+                entre as equipes escolares. A equipe de Tsubasa vence por 1 a 0.
+              </p>
+
+              <p>Diretor:Isamu Imakake</p>
+              <p>Roteiro:Yōichi Takahashi</p>
+              <p>Estreia:15 de março de 1986</p>
+              <p>
+                Elenco:Akari Hibino Seiyū, Akiko Inose, Koichi Hashimoto, Ken'yū
+                Horiuchi, Nobuo Tobita e Hirotaka Suzuoki
+              </p>
+              <p>Avaliações : 6.4</p>
+              <img class="avalia" src="assets/download.jpg" alt="nota" />
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="video4">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/fn_6b19E6yo"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="info">
+              <h2 class="nome_do_filme">
+                Captain Tsubasa: Sekai Daikessen, Jr. World Cup
+              </h2>
+              <p>
+                Este filme é de 1986, considerado um dos melhores, onde a trama
+                se passa nos Estados Unidos. As seleções convidadas foram:
+                Japão, uma seleção combinada Europeia, uma seleção combinada da
+                América do Sul e o anfitrião EUA, onde o Japão enfrenta os EUA,
+                e a Europa enfrenta a América do Sul.
+              </p>
+
+              <p>Diretor:Isamu Imakake</p>
+              <p>Roteiro:Yōichi Takahashi</p>
+              <p>Estreia:12 de julho de 1986</p>
+              <p>
+                Elenco:Akari Hibino Seiyū, Akiko Inose, Koichi Hashimoto, Ken'yū
+                Horiuchi, Nobuo Tobita e Hirotaka Suzuoki
+              </p>
+              <p>Avaliações :</p>
+              <img class="avalia" src="assets/download.jpg" alt="nota" />
+            </div>
+          </div>
+        </div>
+        <div class="navigation">
+          <label class="box" for="slide1"></label>
+          <label class="box" for="slide2"></label>
+          <label class="box" for="slide3"></label>
+          <label class="box" for="slide4"></label>
+        </div>
+      </section>
+
+      <div class="two">
+        <!-- Studart -->
+        <div class="principalst">
+          <header class="headerst">
+            <p id="paragrafost">Em destaque</p>
+            <select class="especialidadest">
+              <option value="Naruto">Naruto</option>
+              <option value="DBZ">DBZ</option>
+              <option value="Luta">Luta</option>
+              <option value="Guerra">Guerra</option>
+            </select>
+          </header>
+          <section class="videos">
+            <div class="video1">
+              <iframe
+                id="v01"
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/97dkzVU4p-M"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; 
                                 clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                                        allowfullscreen></iframe>
-                                        </div>
-                                        <div class="video2">
-                                                <iframe id="v02" width="100%" height="100%"
-                                                        src="https://www.youtube.com/embed/zVgKnfN9i34"
-                                                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video2">
+              <iframe
+                id="v02"
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/zVgKnfN9i34"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; 
                                 clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                                        allowfullscreen></iframe>
-                                        </div>
-                                        <div class="video3">
-                                                <iframe id="v03" width="100%" height="100%"
-                                                        src="https://www.youtube.com/embed/dM7x1PNZDo0"
-                                                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-                                 encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                        </div>
-                                        <div class="video4">
-                                                <iframe id="v04" width="100%" height="100%"
-                                                        src="https://www.youtube.com/embed/S7QsHpLU1Sw"
-                                                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video3">
+              <iframe
+                id="v03"
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/dM7x1PNZDo0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write;
+                                 encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video4">
+              <iframe
+                id="v04"
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/S7QsHpLU1Sw"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay;
                                  clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                                        allowfullscreen></iframe>
-
-                                        </div>
-
-                                        <button class="carregarVideos"> + Carregar mais filmes</button>
-
-                                </section>
-                                <div class="header">
-                                        <p class="paragrafost">Últimas avaliações</p>
-                                </div>
-
-                                <section class="comentarios">
-                                        <div class="parte1">
-                                                <img src="assets/perfil1.jpeg" id="perfil1">
-                                                <p id="txt1">Melhor anime de todos os tempos, drama,
-                                                        ação e romance para ninguém colocar defeito,
-                                                        muito obrigado pelo excelente trabalho.
-                                                        Melhor anime de todos os tempos, drama,
-                                                        ação e romance para ninguém colocar defeito,
-                                                        muito obrigado pelo excelente trabalho.
-
-                                                </p>
-                                                <img src="assets/avaliacao.jpeg" id="avaliacao1">
-                                        </div>
-                                        <div class="parte2">
-                                                <img src="assets/perfil1.jpeg" id="perfil2">
-                                                <p id="txt2">Melhor anime de todos os tempos, drama,
-                                                        ação e romance para ninguém colocar defeito,
-                                                        muito obrigado pelo excelente trabalho.
-                                                        Melhor anime de todos os tempos, drama,
-                                                        ação e romance para ninguém colocar defeito,
-                                                        muito obrigado pelo excelente trabalho.
-
-                                                </p>
-                                                <img src="assets/avaliacao.jpeg" id="avaliacao2">
-                                        </div>
-                                        <div class="parte3">
-                                                <img src="assets/perfil1.jpeg" id="perfil3">
-                                                <p id="txt3">Melhor anime de todos os tempos, drama,
-                                                        ação e romance para ninguém colocar defeito,
-                                                        muito obrigado pelo excelente trabalho.
-                                                        Melhor anime de todos os tempos, drama,
-                                                        ação e romance para ninguém colocar defeito,
-                                                        muito obrigado pelo excelente trabalho.
-
-                                                </p>
-                                                <img src="assets/avaliacao.jpeg" id="avaliacao3">
-                                        </div>
-                                        <button class="carregarComentarios"> + Carregar mais avaliações</button>
-                                </section>
-                        </div>
-                </div>
-
-                <div class="three">
-                        <!-- Iuri -->
-                        <p>Iuri</p>
-                </div>
-
-                <div class="four">
-                        <!-- Evandro -->
-
-                        <h2 id="subtitle">Entrevistas & Making of</h2>
-
-                        <section class="posters">
-                                <!-- 3 colunas  -->
-
-                                <div class="post post1">
-                                        <!-- 1 coluna 2 linhas  -->
-
-                                        <div class="videoPost">
-                                                <iframe width="100%" height="100%"
-                                                        src="https://www.youtube.com/embed/YOgjLKURxOI"
-                                                        title="YouTube video player" frameborder="0"
-                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                                        allowfullscreen></iframe>
-                                        </div>
-
-                                        <div class="textoPost">
-                                                <!-- grid na parte de texto especificando posicoes das tags-->
-
-                                                <span id="filme">Mangá:
-                                                        <h7>Cautious Hero: The Hero Is Overpowered but Overly Cautious
-                                                        </h7>
-                                                </span>
-
-                                                <span id="diretor">Diretor:
-                                                        <h7>Light Tuchihi</h7>
-                                                </span>
-
-                                                <span id="roteiro">Ilustrador:
-                                                        <h7>Koyuki</h7>
-                                                </span>
-
-                                                <span id="estreia">Estreia:
-                                                        <h7>2018</h7>
-                                                </span>
-
-                                        </div>
-                                </div>
-
-                                <div class="post post2">
-                                        <!-- 1 coluna 2 linhas  -->
-
-                                        <div class="videoPost">
-                                                <iframe width="100%" height="100%"
-                                                        src="https://www.youtube.com/embed/UB3JzCvXVEo"
-                                                        title="YouTube video player" frameborder="0"
-                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                                        allowfullscreen></iframe>
-
-                                        </div>
-
-                                        <div class="textoPost">
-                                                <!-- grid na parte de texto especificando posicoes das tags-->
-
-                                                <span id="filme">Anime:
-                                                        <h7>Kono Yuusha ga Ore Tueee Kuse ni Shinchou Sugiru</h7>
-                                                </span>
-
-                                                <span id="diretor">Diretor:
-                                                        <h7>Masayuki Sakoi</h7>
-                                                </span>
-
-                                                <span id="roteiro">Roteiro:
-                                                        <h7>Kenta Ihara</h7>
-                                                </span>
-
-                                                <span id="estreia">Estreia:
-                                                        <h7>2019</h7>
-                                                </span>
-
-                                        </div>
-                                </div>
-
-                                <div class="post post3">
-                                        <!-- 1 coluna 2 linhas  -->
-
-                                        <div class="videoPost">
-                                                <iframe width="100%" height="100%"
-                                                        src="https://www.youtube.com/embed/ZPTOf3kJZ9I"
-                                                        title="YouTube video player" frameborder="0"
-                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                                        allowfullscreen></iframe>
-
-                                        </div>
-
-                                        <div class="textoPost">
-                                                <!-- grid na parte de texto especificando posicoes das tags-->
-
-                                                <span id="filme">Web Novel:
-                                                        <h7>Shinchou Yuusha:Kono Yuusha</h7>
-                                                </span>
-
-                                                <span id="diretor">Diretor:
-                                                        <h7>Light Tuchihi</h7>
-                                                </span>
-
-                                                <span id="roteiro">Ilustrador:
-                                                        <h7>Saori Toyota</h7>
-                                                </span>
-
-                                                <span id="estreia">Estreia:
-                                                        <h7>2016</h7>
-                                                </span>
-
-                                        </div>
-                                </div>
-                                <!--  -->
-                                <!--  -->
-
-
-
-                        </section>
-
-                        <section class="CarregarButton">
-                                <button id="CarregarButt"> + Carregar mais filmes</button>
-                        </section>
-
-
-                        <!-- Cautious Hero: The Hero Is Overpowered but Overly Cautious -->
-
-
-                </div>
-
-                <!-- Studart -->
-                <div class="five">
-                        <!-- Top 10 -->
-                </div>
-
-                <div class="six">
-                        <!-- Comunidade (youtube) -->
-                </div>
-
-
-                <!-- Evandro -->
-                <div class="seven">
-                        <!-- Favoritos -->
-                        <div class="LivreFav">
-                                <div class="MangaFav mangaFav1">
-                                        <img src="assets/KonoYuushaFav1.jpg" alt="Manga Favorito 1">
-                                </div>
-
-                                <div class="LegendFav legFav1">
-                                        <p>Cap. 2, pág 23</p>
-                                        <p>Resumo: Deu ruim. Cada um por si, meu patrão! </p>
-                                </div>
-
-
-                                <div class="MangaFav mangaFav2">
-                                        <img src="assets/KonoYuushaFav2.jpg" alt="Manga Favorito 2">
-                                </div>
-
-                                <div class="LegendFav legFav2">
-                                        <p>Cap. 2, pág 29</p>
-                                        <p>Resumo: vou treinar, flw! </p>
-                                </div>
-                        </div>
-
-                        <div class="Sobre">
-                                <div class="Sobretext">
-                                        <h2>Sobre</h2>
-                                        <p>Cenas do capítulo 2 do Mangá de Kono Yuusha ga Ore Tueee Kuse ni Shinchou
-                                                sugiru, onde surge um dos Quatro Reis Celestiais, possuindo um nível bem
-                                                elevado quando comparado ao nível do herói. Assim, conforme sua
-                                                habilidade de se precaver, ele resolve correr da luta e ir treinar, para
-                                                só depois retornar para a luta, quando se sentir preparado.
-                                        </p>
-                                </div>
-
-                                <div class="Edittext">
-                                        <h2>Editorial</h2>
-                                        <span id="diretor">Redação:
-                                                <h7>Light Tuchihi</h7>
-                                        </span>
-                                        <br>
-                                        <span id="roteiro">Ilustrador:
-                                                <h7>Koyuki</h7>
-                                        </span>
-                                        <br>
-                                        <span id="estreia">Estreia:
-                                                <h7>2018</h7>
-                                        </span>
-                                </div>
-
-                                <div class="Social">
-                                        <h2>redes sociais:</h2>
-                                        <!-- Add font awesome icons -->
-                                        <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
-                                        <a href="https://www.twitter.com/" class="fa fa-twitter"></a>
-                                        <a href="https://www.instagram.com/" target="_blank"
-                                                class="fa fa-instagram"></a>
-                                </div>
-                        </div>
-
-
-                </div>
-
-                <div class="eight">
-                        <!-- Propaganda -->
-                        <div class="Novidades">
-                                <div class="Novidtitulo">
-                                        <h2>Novidades</h2>
-                                </div>
-
-                                <!-- lembrar de  criar  divs para consertar tamanho da img em 100% vw e vh  -->
-                                <div class="Materia">
-                                        <div class="ImgMat imgMat1">
-                                                <img src="assets/Kono_Yuusha_poster.jpg" alt="Materia 1">
-                                        </div>
-
-                                        <div class="TextoMat textMat1">
-                                                <a href="https://mangalivre.net/ler/kono-yuusha-ga-ore-tueee-kuse-ni-shinchou-sugiru/online/176158/1#/!page0"
-                                                        target="_blank">
-                                                        <h4>Mangá: Cap 1</h4>
-                                                </a>
-                                                <p>A história começa quando a deusa Listarte convoca um herói para
-                                                        ajudá-la no mundo dos video games.
-                                                        O herói, Seiya, é excepcional em todos os sentidos, mas é
-                                                        incrivelmente cauteloso.
-                                                        Ele faz coisas como comprar três conjuntos de armadura (um para
-                                                        vestir, um sobressalente e um sobressalente para o
-                                                        sobressalente)
-                                                        e usar o poder total contra slimes fracos.
-                                                </p>
-                                        </div>
-
-                                        <div class="ImgMat imgMat2">
-                                                <img src="assets/KonoYuushaAD1.jpg" alt="Materia 2">
-                                        </div>
-
-                                        <div class="TextoMat textMat2">
-                                                <a href="https://mangalivre.net/ler/kono-yuusha-ga-ore-tueee-kuse-ni-shinchou-sugiru/online/176933/2#/!page0"
-                                                        target="_blank">
-                                                        <h4>Mangá: Cap 2</h4>
-                                                </a>
-                                                <p>A história começa quando a deusa Listarte convoca um herói para
-                                                        ajudá-la no mundo dos video games.
-                                                        O herói, Seiya, é excepcional em todos os sentidos, mas é
-                                                        incrivelmente cauteloso.
-                                                        Ele faz coisas como comprar três conjuntos de armadura (um para
-                                                        vestir, um sobressalente e um sobressalente para o
-                                                        sobressalente)
-                                                        e usar o poder total contra slimes fracos.
-                                                </p>
-                                        </div>
-
-                                        <div class="ImgMat imgMat3">
-                                                <img src="assets/KonoYuushaAD3.jpg" alt="Materia 3">
-                                        </div>
-
-                                        <div class="TextoMat textMat3">
-                                                <a href="https://mangalivre.net/ler/kono-yuusha-ga-ore-tueee-kuse-ni-shinchou-sugiru/online/177401/3#/!page0"
-                                                        target="_blank">
-                                                        <h4>Mangá: Cap 3</h4>
-                                                </a>
-                                                <p>A história começa quando a deusa Listarte convoca um herói para
-                                                        ajudá-la no mundo dos video games.
-                                                        O herói, Seiya, é excepcional em todos os sentidos, mas é
-                                                        incrivelmente cauteloso.
-                                                        Ele faz coisas como comprar três conjuntos de armadura (um para
-                                                        vestir, um sobressalente e um sobressalente para o
-                                                        sobressalente)
-                                                        e usar o poder total contra slimes fracos.
-                                                </p>
-                                        </div>
-                                </div>
-
-
-                        </div>
-
-                        <div class="LivrePropaganda">
-                                <a href="https://www.youtube.com/yuse1" target="_blank"><img
-                                                src="assets/KonoYuushaADGif.gif" alt="AD"></a>
-
-
-                        </div>
-
-
-
-                </div>
-
-
-                <!-- Iuri -->
-                <div class="nine">
-                        <!-- Comentários -->
-                </div>
-
-                <div class="ten">
-                        <!-- Sugestões -->
-                </div>
-
-
-                <!-- Igor -->
-                <div class="eleven">
-                        <!-- Formulário -->
-                </div>
-
-        </main>
-</body>
-
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <button class="carregarVideos">+ Carregar mais filmes</button>
+          </section>
+          <div id="header">
+            <p class="paragrafost">Últimas avaliações</p>
+          </div>
+
+          <section class="comentarios">
+            <div class="parte1">
+              <img src="assets/perfil1.jpeg" id="perfil1" />
+              <p id="txt1">
+                Melhor anime de todos os tempos, drama, ação e romance para
+                ninguém colocar defeito, muito obrigado pelo excelente trabalho.
+                Melhor anime de todos os tempos, drama, ação e romance para
+                ninguém colocar defeito, muito obrigado pelo excelente trabalho.
+              </p>
+              <img src="assets/avaliacao.jpeg" id="avaliacao1" />
+            </div>
+            <div class="parte2">
+              <img src="assets/perfil1.jpeg" id="perfil2" />
+              <p id="txt2">
+                Melhor anime de todos os tempos, drama, ação e romance para
+                ninguém colocar defeito, muito obrigado pelo excelente trabalho.
+                Melhor anime de todos os tempos, drama, ação e romance para
+                ninguém colocar defeito, muito obrigado pelo excelente trabalho.
+              </p>
+              <img src="assets/avaliacao.jpeg" id="avaliacao2" />
+            </div>
+            <div class="parte3">
+              <img src="assets/perfil1.jpeg" id="perfil3" />
+              <p id="txt3">
+                Melhor anime de todos os tempos, drama, ação e romance para
+                ninguém colocar defeito, muito obrigado pelo excelente trabalho.
+                Melhor anime de todos os tempos, drama, ação e romance para
+                ninguém colocar defeito, muito obrigado pelo excelente trabalho.
+              </p>
+              <img src="assets/avaliacao.jpeg" id="avaliacao3" />
+            </div>
+            <button class="carregarComentarios">
+              + Carregar mais avaliações
+            </button>
+          </section>
+        </div>
+      </div>
+
+      <div class="three">
+        <!-- Iuri -->
+        <p>Iuri</p>
+      </div>
+
+      <div class="four">
+        <!-- Evandro -->
+
+        <h2 id="subtitle">Entrevistas & Making of</h2>
+
+        <section class="posters">
+          <!-- 3 colunas  -->
+
+          <div class="post post1">
+            <!-- 1 coluna 2 linhas  -->
+
+            <div class="videoPost">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/YOgjLKURxOI"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <div class="textoPost">
+              <!-- grid na parte de texto especificando posicoes das tags-->
+
+              <span id="filme"
+                >Mangá:
+                <h7
+                  >Cautious Hero: The Hero Is Overpowered but Overly Cautious
+                </h7>
+              </span>
+
+              <span id="diretor"
+                >Diretor:
+                <h7>Light Tuchihi</h7>
+              </span>
+
+              <span id="roteiro"
+                >Ilustrador:
+                <h7>Koyuki</h7>
+              </span>
+
+              <span id="estreia"
+                >Estreia:
+                <h7>2018</h7>
+              </span>
+            </div>
+          </div>
+
+          <div class="post post2">
+            <!-- 1 coluna 2 linhas  -->
+
+            <div class="videoPost">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/UB3JzCvXVEo"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <div class="textoPost">
+              <!-- grid na parte de texto especificando posicoes das tags-->
+
+              <span id="filme"
+                >Anime:
+                <h7>Kono Yuusha ga Ore Tueee Kuse ni Shinchou Sugiru</h7>
+              </span>
+
+              <span id="diretor"
+                >Diretor:
+                <h7>Masayuki Sakoi</h7>
+              </span>
+
+              <span id="roteiro"
+                >Roteiro:
+                <h7>Kenta Ihara</h7>
+              </span>
+
+              <span id="estreia"
+                >Estreia:
+                <h7>2019</h7>
+              </span>
+            </div>
+          </div>
+
+          <div class="post post3">
+            <!-- 1 coluna 2 linhas  -->
+
+            <div class="videoPost">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/ZPTOf3kJZ9I"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <div class="textoPost">
+              <!-- grid na parte de texto especificando posicoes das tags-->
+
+              <span id="filme"
+                >Web Novel:
+                <h7>Shinchou Yuusha:Kono Yuusha</h7>
+              </span>
+
+              <span id="diretor"
+                >Diretor:
+                <h7>Light Tuchihi</h7>
+              </span>
+
+              <span id="roteiro"
+                >Ilustrador:
+                <h7>Saori Toyota</h7>
+              </span>
+
+              <span id="estreia"
+                >Estreia:
+                <h7>2016</h7>
+              </span>
+            </div>
+          </div>
+          <!--  -->
+          <!--  -->
+        </section>
+
+        <section class="CarregarButton">
+          <button id="CarregarButt">+ Carregar mais filmes</button>
+        </section>
+
+        <!-- Cautious Hero: The Hero Is Overpowered but Overly Cautious -->
+      </div>
+
+      <!-- Studart -->
+      <div class="five">
+        <!-- Top 10 -->
+      </div>
+
+      <div class="six">
+        <!-- Comunidade (youtube) -->
+      </div>
+
+      <!-- Evandro -->
+      <div class="seven">
+        <!-- Favoritos -->
+        <div class="LivreFav">
+          <div class="MangaFav mangaFav1">
+            <img src="assets/KonoYuushaFav1.jpg" alt="Manga Favorito 1" />
+          </div>
+
+          <div class="LegendFav legFav1">
+            <p>Cap. 2, pág 23</p>
+            <p>Resumo: Deu ruim. Cada um por si, meu patrão!</p>
+          </div>
+
+          <div class="MangaFav mangaFav2">
+            <img src="assets/KonoYuushaFav2.jpg" alt="Manga Favorito 2" />
+          </div>
+
+          <div class="LegendFav legFav2">
+            <p>Cap. 2, pág 29</p>
+            <p>Resumo: vou treinar, flw!</p>
+          </div>
+        </div>
+
+        <div class="Sobre">
+          <div class="Sobretext">
+            <h2>Sobre</h2>
+            <p>
+              Cenas do capítulo 2 do Mangá de Kono Yuusha ga Ore Tueee Kuse ni
+              Shinchou sugiru, onde surge um dos Quatro Reis Celestiais,
+              possuindo um nível bem elevado quando comparado ao nível do herói.
+              Assim, conforme sua habilidade de se precaver, ele resolve correr
+              da luta e ir treinar, para só depois retornar para a luta, quando
+              se sentir preparado.
+            </p>
+          </div>
+
+          <div class="Edittext">
+            <h2>Editorial</h2>
+            <span id="diretor"
+              >Redação:
+              <h7>Light Tuchihi</h7>
+            </span>
+            <br />
+            <span id="roteiro"
+              >Ilustrador:
+              <h7>Koyuki</h7>
+            </span>
+            <br />
+            <span id="estreia"
+              >Estreia:
+              <h7>2018</h7>
+            </span>
+          </div>
+
+          <div class="Social">
+            <h2>redes sociais:</h2>
+            <!-- Add font awesome icons -->
+            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+            <a href="https://www.twitter.com/" class="fa fa-twitter"></a>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              class="fa fa-instagram"
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="eight">
+        <!-- Propaganda -->
+        <div id="Novidades">
+          <div class="Novidtitulo">
+            <h2>Novidades</h2>
+          </div>
+
+          <!-- lembrar de  criar  divs para consertar tamanho da img em 100% vw e vh  -->
+          <div class="Materia">
+            <div class="ImgMat imgMat1">
+              <img src="assets/Kono_Yuusha_poster.jpg" alt="Materia 1" />
+            </div>
+
+            <div class="TextoMat textMat1">
+              <a
+                href="https://mangalivre.net/ler/kono-yuusha-ga-ore-tueee-kuse-ni-shinchou-sugiru/online/176158/1#/!page0"
+                target="_blank"
+              >
+                <h4>Mangá: Cap 1</h4>
+              </a>
+              <p>
+                A história começa quando a deusa Listarte convoca um herói para
+                ajudá-la no mundo dos video games. O herói, Seiya, é excepcional
+                em todos os sentidos, mas é incrivelmente cauteloso. Ele faz
+                coisas como comprar três conjuntos de armadura (um para vestir,
+                um sobressalente e um sobressalente para o sobressalente) e usar
+                o poder total contra slimes fracos.
+              </p>
+            </div>
+
+            <div class="ImgMat imgMat2">
+              <img src="assets/KonoYuushaAD1.jpg" alt="Materia 2" />
+            </div>
+
+            <div class="TextoMat textMat2">
+              <a
+                href="https://mangalivre.net/ler/kono-yuusha-ga-ore-tueee-kuse-ni-shinchou-sugiru/online/176933/2#/!page0"
+                target="_blank"
+              >
+                <h4>Mangá: Cap 2</h4>
+              </a>
+              <p>
+                A história começa quando a deusa Listarte convoca um herói para
+                ajudá-la no mundo dos video games. O herói, Seiya, é excepcional
+                em todos os sentidos, mas é incrivelmente cauteloso. Ele faz
+                coisas como comprar três conjuntos de armadura (um para vestir,
+                um sobressalente e um sobressalente para o sobressalente) e usar
+                o poder total contra slimes fracos.
+              </p>
+            </div>
+
+            <div class="ImgMat imgMat3">
+              <img src="assets/KonoYuushaAD3.jpg" alt="Materia 3" />
+            </div>
+
+            <div class="TextoMat textMat3">
+              <a
+                href="https://mangalivre.net/ler/kono-yuusha-ga-ore-tueee-kuse-ni-shinchou-sugiru/online/177401/3#/!page0"
+                target="_blank"
+              >
+                <h4>Mangá: Cap 3</h4>
+              </a>
+              <p>
+                A história começa quando a deusa Listarte convoca um herói para
+                ajudá-la no mundo dos video games. O herói, Seiya, é excepcional
+                em todos os sentidos, mas é incrivelmente cauteloso. Ele faz
+                coisas como comprar três conjuntos de armadura (um para vestir,
+                um sobressalente e um sobressalente para o sobressalente) e usar
+                o poder total contra slimes fracos.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="LivrePropaganda">
+          <a href="https://www.youtube.com/yuse1" target="_blank"
+            ><img src="assets/KonoYuushaADGif.gif" alt="AD"
+          /></a>
+        </div>
+      </div>
+
+      <!-- Iuri -->
+      <div class="nine">
+        <!-- Comentários -->
+      </div>
+
+      <div class="ten">
+        <!-- Sugestões -->
+      </div>
+
+      <!-- Igor -->
+
+      <!-- Formulário -->
+      <section class="formulario">
+        <!-- Formulário -->
+        <div class="form_imagem">
+          <img width="300px" height="autoplay" src="/assets/Form_Tsubasa.jpg" />
+        </div>
+
+        <div class="form">
+          <form action="#">
+            <div class="form_header">
+              <div class="title">
+                <h1>Assine nossa Newsletter</h1>
+              </div>
+            </div>
+            <div class="campos">
+              <div class="info_campo">
+                <input
+                  id="firstname"
+                  type="text"
+                  name="firstname"
+                  placeholder="Digite seu primeiro nome"
+                  required
+                />
+              </div>
+
+              <div class="info_campo">
+                <input
+                  id="secondname"
+                  type="text"
+                  name="secondname"
+                  placeholder="Digite seu sobrenome"
+                  required
+                />
+              </div>
+
+              <div class="info_campo">
+                <input
+                  id="email"
+                  type="email"
+                  name="email"
+                  placeholder="Digite seu email"
+                  required
+                />
+              </div>
+
+              <div class="info_campo">
+                <input
+                  id="telefone"
+                  type="number"
+                  name="telefone"
+                  placeholder="(xx) xxxx - xxxx"
+                  required
+                />
+              </div>
+
+              <button class="button_assinar">Assinar</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <footer class="rodape">
+        <p>Copyright 2020 - Disciplina de Tecnologia Web</p>
+        <img src="" alt="logo" />
+      </footer>
+    </main>
+  </body>
 </html>
