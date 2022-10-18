@@ -976,7 +976,6 @@ h7 {
 }
 
 .Sobre {
-  /* background-color: blue; */
   padding: 0px 40px 10px;
   text-align: left;
 }
@@ -997,8 +996,6 @@ h2 {
   width: 30vw;
   margin-bottom: 30px;
 }
-
-.Social {}
 
 .fa {
   padding: 20px;
@@ -1027,9 +1024,6 @@ h2 {
   color: white;
 }
 
-.fa-instagram-user:after {
-  color: red;
-}
 
 /* Final: div sobre Favoritos */
 
@@ -1044,9 +1038,7 @@ h2 {
 #Novidades {
   padding: 10px;
   display: grid;
-  /* grid-template-columns:  20vw 1fr; */
   grid-template-rows: 5vh 1fr;
-  column-gap: 20px;
   row-gap: 20px;
   align-content: center;
 }
@@ -1067,11 +1059,9 @@ h2 {
   column-gap: 20px;
 }
 
-.ImgMat {
-  display: flex;
+.ImgMat {  
   height: 15vh;
   padding: 0 10px;
-
   grid-column-start: 1;
   grid-column-end: 2;
 }
@@ -1084,43 +1074,27 @@ h2 {
 
 .TextoMat {
   text-align: justify;
-
   grid-column-start: 2;
   grid-column-end: 3;
 }
 
-.imgMat1 {
+.imgMat1, .textMat1{
   grid-row-start: 1;
   grid-row-end: 2;
 }
 
-.textMat1 {
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-
-.imgMat2 {
+.imgMat2, .textMat2 {
   grid-row-start: 2;
   grid-row-end: 3;
 }
 
-.textMat2 {
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-
-.imgMat3 {
+.imgMat3,.textMat3{
   grid-row-start: 3;
   grid-row-end: 4;
 }
 
-.textMat3 {
-  grid-row-start: 3;
-  grid-row-end: 4;
-}
 
 .LivrePropaganda {
-  /* border: #3B5998 1px solid; */
   padding: 10px;
   display: flex;
   justify-content: center;
@@ -1129,11 +1103,6 @@ h2 {
 /* Final: div sobre Propaganda */
 /* Final: Evandro */
 
-.nine {}
-
-.ten {}
-
-.eleven {}
 
 /* Medias */
 
@@ -1178,19 +1147,8 @@ h2 {
     grid-template-rows: 40% repeat(2, 1fr);
   }
 
-  .Sobretext {
+  .Sobretext, .Edittext, .Social {
     width: 100%;
-    /* height: 100%; */
-  }
-
-  .Edittext {
-    width: 100%;
-    /* height: 100%; */
-  }
-
-  .Social {
-    width: 100%;
-    /* height: 100%; */
   }
 
   .eight {
@@ -1206,7 +1164,7 @@ h2 {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    /* width: 100%; */
+    
   }
 
   .Materia {
@@ -1229,6 +1187,7 @@ h2 {
 
   .LivrePropaganda>a>img {
     width: 90vw;
+    
   }
 
   /* Evandro */
